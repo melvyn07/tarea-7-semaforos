@@ -1,0 +1,82 @@
+
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+  <title>Login</title>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.9.0/css/lightbox.min.css">
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<style>
+
+html, body, .container-table 
+{
+    height: 100%;
+}
+
+.container-table 
+{
+    display: table;
+}
+.vertical-center-row 
+{
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.margin-bottom-10
+{
+	margin-bottom: 10px;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="container container-table">
+    <div class="row vertical-center-row">
+    <center> <span> <h3> <b> Semaforos de la Amet </b> </h3> </span> </center> 
+	    <br>
+	<fieldset>	
+        <button type="button" class="btn btn-primary col-md-4 col-md-offset-4 margin-bottom-10" onclick = "GoTo_Calle1()" >Calle<b> <em> A </em></b></button> 
+      
+        <button type="button" class="btn btn-primary col-md-4 col-md-offset-4 margin-bottom-10" onclick = "GoTo_Calle2()" >Calle<b> <em> B</b> </em></button> 
+
+        <button type="button" class="btn btn-primary col-md-4 col-md-offset-4 margin-bottom-10" onclick = "GoTo_Admin()" >Admin</button> 
+</fieldset>
+    </div>
+</div>
+
+<script>
+
+function GoTo_Calle1()
+{
+   window.location.href = "./semaforo.html" ;
+}
+
+function GoTo_Calle2()
+{
+	window.location.href = "./semaforo2.html" ;
+}
+
+function GoTo_Admin()
+{
+	window.location.href = "./admin.html" ;
+}
+
+</script>
+
+</body>
+
+</html>
